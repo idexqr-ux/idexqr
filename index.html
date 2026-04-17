@@ -19,7 +19,12 @@
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background: linear-gradient(to bottom, var(--bg), var(--celadon));
+      background: linear-gradient(
+  to bottom,
+  #fbfcfb 0%,
+  #eef3f1 60%,
+  #dde8e3 100%
+);
       color: var(--ink);
       display: grid;
       place-items: center;
@@ -61,6 +66,24 @@
       font-size: 0.95rem;
     }
 
+    /* Discover */
+.discover {
+  background: #e4eeea;
+  border-color: #c9d5d0;
+}
+
+/* EntryHub */
+.entry {
+  background: #f1e9dc;
+  border-color: #e2d2b8;
+}
+
+/* Listen */
+.listen {
+  background: #e6ebef;
+  border-color: #c8d2d8;
+}
+
     footer {
       font-size: 0.85rem;
       color: var(--muted);
@@ -97,13 +120,11 @@
 
     <nav aria-label="Available experiences">
       <div class="links">
-        <a href="https://qr-discover.com" aria-label="Discover information and explore experiences">
-          Discover
-        </a>
-        <a href="https://qr-entryhub.com" aria-label="Open your event entry hub and access your ticket">
-          EntryHub
-        </a>
-        <a href="https://qr-listen.com" aria-label="Listen to spoken guidance and instructions">
+        <a href="https://qr-discover.com" class="discover" aria-label="Discover information and explore experiences">Discover</a>
+
+<a href="https://qr-entryhub.com" class="entry" aria-label="Open your event entry hub and access your ticket">EntryHub</a>
+
+<a href="https://qr-listen.com" class="listen" aria-label="Listen to spoken guidance and instructions">Listen</a>
           Listen
         </a>
       </div>
