@@ -9,22 +9,19 @@
 
   <style>
     :root {
-      --celadon: #c9d5d0;
-      --celadon-deep: #b8c6c1;
       --ink: #2f3a38;
       --muted: #6b7a77;
-      --bg: #f7f9f8;
     }
 
     body {
       margin: 0;
       font-family: Georgia, serif;
       background: linear-gradient(
-  to bottom,
-  #fbfcfb 0%,
-  #eef3f1 60%,
-  #dde8e3 100%
-);
+        to bottom,
+        #fbfcfb 0%,
+        #eef3f1 60%,
+        #dde8e3 100%
+      );
       color: var(--ink);
       display: grid;
       place-items: center;
@@ -40,6 +37,13 @@
     h1 {
       margin-bottom: 10px;
       font-size: 2.4rem;
+      font-weight: normal;
+    }
+
+    .reg {
+      font-size: 0.42em;
+      vertical-align: 0.5em;
+      opacity: 0.85;
     }
 
     .tagline {
@@ -47,21 +51,6 @@
       color: var(--muted);
       margin-bottom: 36px;
     }
-
-   .reg {
-  font-size: 0.42em;
-  vertical-align: 0.5em;
-  opacity: 0.85;
-}
-
-    .footer-line {
-  display: block;
-  width: 40px;
-  height: 1px;
-  background: #c9d5d0;
-  margin: 40px auto 0;
-  opacity: 0.6;
-}
 
     .links {
       display: flex;
@@ -71,40 +60,30 @@
       margin-bottom: 48px;
     }
 
-   .links a {
+    .links a {
   text-decoration: none;
   padding: 10px 18px;
   border-radius: 999px;
-  border: 1px solid transparent;
+  border: 1px solid #c9d5d0;
   color: var(--ink);
   font-size: 0.95rem;
   display: inline-block;
-}
-    
-    /* Discover */
-.discover {
-  background: #e4eeea;
-  border-color: #c9d5d0;
-}
-
-/* EntryHub */
-.entry {
-  background: #f1e9dc;
-  border-color: #e2d2b8;
-}
-
-/* Listen */
-.listen {
-  background: #e6ebef;
-  border-color: #c8d2d8;
+  background: #eef3f1;
 }
 
     footer {
-      font-size: 0.85rem;
-      color: var(--muted);
+      margin-top: 10px;
     }
 
-    /* Screen reader only */
+    .footer-line {
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: #c9d5d0;
+      margin: 0 auto;
+      opacity: 0.6;
+    }
+
     .sr-only {
       position: absolute;
       width: 1px;
@@ -120,14 +99,11 @@
 </head>
 
 <body>
-
   <main class="wrap">
-
-    <!-- Screen reader introduction -->
     <p class="sr-only">
       You have opened the IdexQR website.
       This page provides access to simple, calm, connected experiences.
-      You can choose to discover information, listen to guidance, or open your event entry hub.
+      You can choose to discover information, listen to guidance, or open your entry hub.
     </p>
 
     <h1>IdexQR<span class="reg">®</span></h1>
@@ -135,17 +111,15 @@
 
     <nav aria-label="Available experiences">
       <div class="links">
-  <a href="https://qr-discover.com" class="discover">Discover</a>
-<a href="https://qr-entryhub.com" class="entry">EntryHub</a>
-<a href="https://qr-listen.com" class="listen">Listen</a>
-</div>
+        <a href="https://qr-discover.com" class="discover" aria-label="Discover information and explore experiences">Discover</a>
+        <a href="https://qr-entryhub.com" class="entry" aria-label="Open your entry hub and access your ticket">EntryHub</a>
+        <a href="https://qr-listen.com" class="listen" aria-label="Listen to spoken guidance and instructions">Listen</a>
+      </div>
     </nav>
 
     <footer>
-  <span class="footer-line"></span>
-</footer>
-
+      <span class="footer-line"></span>
+    </footer>
   </main>
-
 </body>
 </html>
