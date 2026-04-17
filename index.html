@@ -3,58 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>IdexQR</title>
-  <meta name="description" content="Calm, connected experiences. More coming soon." />
+  <meta name="description" content="Calm, connected experiences." />
+
   <style>
+    :root {
+      --celadon: #c9d5d0;
+      --celadon-deep: #b8c6c1;
+      --ink: #2f3a38;
+      --muted: #6b7a77;
+      --bg: #f7f9f8;
+    }
+
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background: #f7f9f8;
-      color: #2f3a38;
+      background: linear-gradient(to bottom, var(--bg), var(--celadon));
+      color: var(--ink);
       display: grid;
       place-items: center;
       min-height: 100vh;
     }
+
     .wrap {
       max-width: 720px;
-      padding: 40px 24px;
+      padding: 48px 24px;
       text-align: center;
     }
+
     h1 {
-      margin-bottom: 12px;
-      font-size: 2.2rem;
+      margin-bottom: 10px;
+      font-size: 2.4rem;
+      letter-spacing: 0.5px;
     }
-    p {
+
+    .tagline {
       font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 28px;
+      color: var(--muted);
+      margin-bottom: 36px;
     }
+
     .links {
       display: flex;
       gap: 12px;
       justify-content: center;
       flex-wrap: wrap;
+      margin-bottom: 48px;
     }
-    a {
+
+    .links a {
       text-decoration: none;
-      padding: 10px 16px;
-      border: 1px solid #b8c6c1;
+      padding: 10px 18px;
       border-radius: 999px;
-      color: #2f3a38;
+      border: 1px solid var(--celadon-deep);
+      background: rgba(255,255,255,0.85);
+      color: var(--ink);
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+
+    .links a:hover {
       background: white;
+      border-color: var(--ink);
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: var(--muted);
+      opacity: 0.9;
+    }
+
+    footer span {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.8rem;
+      opacity: 0.8;
     }
   </style>
 </head>
+
 <body>
   <main class="wrap">
     <h1>IdexQR®</h1>
-    <p>Calm, connected experiences. More coming soon.</p>
+    <p class="tagline">Calm, connected experiences.</p>
 
     <div class="links">
       <a href="https://qr-discover.com">Discover</a>
       <a href="https://qr-entryhub.com">EntryHub</a>
       <a href="https://qr-listen.com">Listen</a>
     </div>
+
+    <footer>
+      IdexQR®
+      <span>Because clearer information creates calmer experiences</span>
+    </footer>
   </main>
 </body>
 </html>
