@@ -23,94 +23,75 @@
         #dde8e3 100%
       );
       color: var(--ink);
+      min-height: 100vh;
       display: grid;
       place-items: center;
-      min-height: 100vh;
     }
 
     .wrap {
-      max-width: 720px;
-      padding: 48px 24px;
+      width: min(720px, 100%);
+      padding: 72px 28px 56px;
       text-align: center;
+      box-sizing: border-box;
     }
 
     h1 {
-      margin-bottom: 10px;
-      font-size: 2.4rem;
+      margin: 0 0 18px;
+      font-size: 2.35rem;
       font-weight: normal;
-    }
-
-    .reg {
-      font-size: 0.42em;
-      vertical-align: 0.5em;
-      opacity: 0.85;
+      line-height: 1.1;
+      letter-spacing: 0.01em;
     }
 
     .tagline {
-      font-size: 1.1rem;
+      margin: 0 0 44px;
+      font-size: 1.08rem;
+      line-height: 1.6;
       color: var(--muted);
-      margin-bottom: 36px;
+    }
+
+    nav {
+      margin: 0 0 56px;
     }
 
     .links {
       display: flex;
-      gap: 12px;
+      gap: 14px;
       justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: 48px;
     }
 
     .links a {
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 999px;
-  border: 1px solid #c9d5d0;
-  color: var(--ink);
-  font-size: 0.95rem;
-  display: inline-block;
-  background: #eef3f1;
-}
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 1px solid #cfd8d4;
+      background: rgba(255, 255, 255, 0.88);
+      color: var(--ink);
+      font-size: 0.96rem;
+      line-height: 1.2;
+      display: inline-block;
+      min-width: 96px;
+    }
 
     footer {
-      margin-top: 10px;
+      padding-top: 24px;
     }
 
     .footer-line {
-      display: block;
-      width: 40px;
+      width: 52px;
       height: 1px;
-      background: #c9d5d0;
-      margin: 0 auto;
-      opacity: 0.6;
+      background: #cad5d0;
+      margin: 0 auto 18px;
+      opacity: 0.8;
     }
 
-    footer {
-  margin-top: 40px;
-}
-
-.footer-inner {
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
-.footer-line-text {
-  margin: 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.3px;
-}
-
-.footer-sub {
-  margin: 4px 0 0;
-  font-size: 0.8rem;
-  opacity: 0.85;
-}
-
-    footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #dfe7e3;
-}
+    .footer-text {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
 
     .sr-only {
       position: absolute;
@@ -123,6 +104,35 @@
       white-space: nowrap;
       border: 0;
     }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 64px 22px 48px;
+      }
+
+      h1 {
+        font-size: 2.05rem;
+        margin-bottom: 16px;
+      }
+
+      .tagline {
+        margin-bottom: 38px;
+        font-size: 1rem;
+      }
+
+      nav {
+        margin-bottom: 48px;
+      }
+
+      .links {
+        gap: 10px;
+      }
+
+      .links a {
+        min-width: 88px;
+        padding: 11px 18px;
+      }
+    }
   </style>
 </head>
 
@@ -134,23 +144,21 @@
       You can choose to discover information, listen to guidance, or open your entry hub.
     </p>
 
-    <h1>IdexQR<span class="reg">®</span></h1>
+    <h1>IdexQR</h1>
     <p class="tagline">Calm, connected experiences.</p>
 
     <nav aria-label="Available experiences">
       <div class="links">
-        <a href="https://qr-discover.com" class="discover" aria-label="Discover information and explore experiences">Discover</a>
-        <a href="https://qr-entryhub.com" class="entry" aria-label="Open your entry hub and access your ticket">EntryHub</a>
-        <a href="https://qr-listen.com" class="listen" aria-label="Listen to spoken guidance and instructions">Listen</a>
+        <a href="https://qr-discover.com" aria-label="Discover information and explore experiences">Discover</a>
+        <a href="https://qr-entryhub.com" aria-label="Open your entry hub and access your ticket">EntryHub</a>
+        <a href="https://qr-listen.com" aria-label="Listen to spoken guidance and instructions">Listen</a>
       </div>
     </nav>
 
     <footer>
-  <div class="footer-inner">
-    <p class="footer-line-text">IdexQR</p>
-    <p class="footer-sub">Calm, connected experiences</p>
-  </div>
-</footer>
+      <div class="footer-line"></div>
+      <p class="footer-text">IdexQR</p>
+    </footer>
   </main>
 </body>
 </html>
