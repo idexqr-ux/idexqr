@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: Georgia, serif;
   background: linear-gradient(180deg, #cfe8d6 0%, #e8f3ec 100%);
-  color: #0f2a1d;  /* ← change here */
+  color: #1f3d2b;  /* ← change here */
   text-align: center;
 }
 
@@ -29,7 +29,7 @@ body {
 h1 {
   font-size: 1.8rem;
   margin: 0.4rem 0;
-  color: #163828;
+  color: #1f3d2b;
 }
 
 h1, h3 {
