@@ -130,10 +130,6 @@ h1, h3 {
   box-shadow: none !important;
 }
 
-.qr-code {
-  outline: 2px solid red;
-}
-
 .qr-label {
   font-style: italic;
   font-size: 0.9rem;
