@@ -119,9 +119,9 @@ h1, h3 {
 
 .qr-code {
   display: block;
-  width: 75%;
-  max-width: 260px;
-  min-width: 200px;
+  width: 85%;
+  max-width: 320px;
+  min-width: 220px;
   margin: 0.6rem auto 0.3rem;
   padding: 0 !important;
   background: transparent !important;
