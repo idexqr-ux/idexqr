@@ -1,1 +1,132 @@
+/* --- Base Layout --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #cfe8d6 0%, #e8f3ec 100%);
+  color: #1f3d2b;
+  text-align: center;
+}
 
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+/* --- Images --- */
+.museum-logo,
+.listen-image {
+  display: block;
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  margin: 1.1rem auto 1.2rem;
+  opacity: 0.9;
+}
+
+/* --- Typography --- */
+h1 {
+  font-size: 1.8rem;
+  margin: 0.4rem 0;
+  color: #1f3d2b;
+}
+
+.brand sup {
+  font-size: 0.55em;
+  vertical-align: super;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+
+.subheading {
+  font-style: italic;
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-intro {
+  margin: 0.5rem 0 0.6rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* --- Ticket Button --- */
+.ticket-button {
+  display: inline-block;
+  margin: 0.5rem auto 1.5rem;
+  padding: 0.85rem 1.4rem;
+  background: #2e5a3f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.ticket-button:hover {
+  background: #244a34;
+}
+
+/* --- Divider --- */
+.divider {
+  width: 70%;
+  height: 1px;
+  background: #b8b1a6;
+  margin: 1.2rem auto 1.8rem;
+}
+
+/* --- QR Sections --- */
+.qr-section {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.qr-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.qr-desc {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
+.qr-place {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 0.6rem;
+}
+
+/* --- QR Interaction --- */
+.qr-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.qr-code {
+  display: block;
+  width: 75%;
+  max-width: 260px;
+  min-width: 200px;
+  margin: 0.6rem auto 0.3rem;
+  padding: 2px; /* minimal but safe */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.qr-label {
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 1.2rem;
+}
+
+/* --- Links --- */
+.qr-link:hover .qr-label {
+  opacity: 1;
+}
