@@ -1,185 +1,142 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>IdexQR</title>
-  <meta name="description" content="Calm, connected experiences." />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntryHub QR Access</title>
   <style>
-    :root {
-      --ink: #2f4a44;
-      --muted: #6b7a77;
-    }
-
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background: linear-gradient(
-  to bottom,
-  #f4f6f5 0%,     /* your grey-white (structure) */
-  #e3efe9 55%,    /* soft transition */
-  #cfe3da 100%    /* greener celadon, but still calm */
-);
-      
-      color: var(--ink);
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f6f2;
+      color: #2c2c2c;
+      text-align: center;
     }
 
-    .wrap {
-      width: min(720px, 100%);
-      padding: 72px 28px 56px;
-      text-align: center;
-      box-sizing: border-box;
+    .container {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+
+    .museum-logo,
+    .listen-image {
+      display: block;
+      max-width: 140px;
+      width: 100%;
+      height: auto;
+      margin: 1.1rem auto 1.2rem;
+      opacity: 0.9;
     }
 
     h1 {
-      margin: 0 0 18px;
-      font-size: 2.35rem;
-      font-weight: normal;
-      line-height: 1.1;
-      letter-spacing: 0.01em;
+      font-size: 1.8rem;
+      margin: 0.4rem 0 0.4rem;
     }
 
-    .tagline {
-      margin: 0 0 44px;
-      font-size: 1.08rem;
-      line-height: 1.6;
-      color: var(--muted);
+    .subheading {
+      font-style: italic;
+      font-size: 1rem;
+      opacity: 0.85;
+      margin-bottom: 1.5rem;
     }
 
-    nav {
-      margin: 0 0 56px;
-    }
-
-    .reg {
-  font-size: 0.4em;
-  vertical-align: 0.5em;
-  opacity: 0.8;
-}
-
-    .links {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .links a {
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 999px;
-  border: 1px solid #d2d8d5;
-  background: #e9ecea;
-  color: var(--ink);
-  font-size: 0.96rem;
-  line-height: 1.2;
-  display: inline-block;
-  min-width: 96px;
-}
-
- .links a {
-  letter-spacing: 0.04em;
-}   
-
-    footer {
-      padding-top: 24px;
-    }
-
-    .footer-line {
-      width: 52px;
+    .divider {
+      width: 70%;
       height: 1px;
-      background: #cad5d0;
-      margin: 0 auto 18px;
+      background: #b8b1a6;
+      margin: 1.2rem auto 1.8rem;
+    }
+
+    .qr-section {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .qr-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .qr-desc {
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+      opacity: 0.85;
+    }
+
+    .qr-link {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .qr-code {
+      display: block;
+      max-width: 140px;
+      width: 100%;
+      height: auto;
+      margin: 1.1rem auto 0.4rem;
+      opacity: 1;
+      background: #fff;
+      padding: 6px;
+      border: 2.5px solid #000;
+      box-sizing: border-box;
+    }
+
+    .qr-label {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.9rem;
       opacity: 0.8;
+      margin-bottom: 1.2rem;
     }
 
-    .footer-text {
-      margin: 0;
-      font-size: 0.92rem;
-      color: var(--muted);
-      letter-spacing: 0.02em;
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: #2c2c2c;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #2c2c2c;
+      padding-bottom: 2px;
     }
 
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    @media (max-width: 640px) {
-      .wrap {
-        padding: 64px 22px 48px;
-      }
-
-      h1 {
-        font-size: 2.05rem;
-        margin-bottom: 16px;
-      }
-
-      .tagline {
-        margin-bottom: 38px;
-        font-size: 1rem;
-      }
-
-      nav {
-        margin-bottom: 48px;
-      }
-
-      .links {
-        gap: 10px;
-      }
-
-      .links a {
-        min-width: 88px;
-        padding: 11px 18px;
-      }
-
-      .links a {
-  background: #f2f3f1;   /* soft Cotton III feel */
-  border: 1px solid #d8ddda;
-  color: var(--ink);
-}
-
-      .links a:hover {
-  background: #fbfcfb;
-}
+    .back-link:hover,
+    .qr-link:hover .qr-label {
+      opacity: 1;
     }
   </style>
 </head>
-
 <body>
-  <main class="wrap">
-    <p class="sr-only">
-      You have opened the IdexQR website.
-      This page provides access to simple, calm, connected experiences.
-      You can choose to discover information, listen to guidance, or open your entry hub.
-    </p>
+  <div class="container">
+    <!-- Optional logo -->
+    <img src="museum-logo.png" alt="Museum logo" class="museum-logo" />
 
-    <h1>IdexQR<span class="reg">®</span></h1>
-    <p class="tagline">Calm, connected experiences.</p>
+    <h1>EntryHub</h1>
+    <div class="subheading">Know before you go</div>
 
-    <nav aria-label="Available experiences">
-      <div class="links">
-        <a href="https://qr-discover.com" aria-label="Discover information and explore experiences">Discover</a>
-        <a href="https://qr-entryhub.com" aria-label="Open your entry hub and access your ticket">EntryHub</a>
-        <a href="https://qr-listen.com" aria-label="Listen to spoken guidance and instructions">Listen</a>
-      </div>
-    </nav>
+    <div class="divider"></div>
 
-    <footer>
-      <div class="footer-line"></div>
-      <p class="footer-text">IdexQR</p>
-    </footer>
-  </main>
+    <div class="qr-section">
+      <div class="qr-title">QR Discover</div>
+      <div class="qr-desc">Explore more about your visit</div>
+      <a href="https://your-discover-link-here.com" class="qr-link">
+        <img src="qr-discover.png" alt="QR Discover code" class="qr-code" />
+        <div class="qr-label">Tap or scan</div>
+      </a>
+    </div>
+
+    <div class="qr-section">
+      <div class="qr-title">QR Listen</div>
+      <div class="qr-desc">Start the audio experience</div>
+      <a href="https://your-listen-link-here.com" class="qr-link">
+        <img src="qr-listen.png" alt="QR Listen code" class="qr-code" />
+        <div class="qr-label">Tap or scan</div>
+      </a>
+    </div>
+
+    <a href="index.html" class="back-link">Back to EntryHub</a>
+  </div>
 </body>
 </html>
