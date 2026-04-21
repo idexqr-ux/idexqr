@@ -33,10 +33,10 @@ color: #1f3d2b;
 }
 
 .tm {
-  font-size: 0.10em;     /* was 0.45 */
+  font-size: 0.6em;     /* was 0.45 */
   vertical-align: 0.4em;/* was 0.6 */
   margin-left: 1px;
-  opacity: 0.3;          /* softens it */
+  opacity: 0.2;          /* softens it */
 }
 
 h1, h3 {
