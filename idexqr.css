@@ -1,149 +1,124 @@
 /* --- Base Layout --- */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Georgia, serif;
-  background: linear-gradient(180deg, #cfe8d6 0%, #e8f3ec 100%);
-  color: #1f3d2b;  /* ← change here */
-  text-align: center;
+margin: 0;
+padding: 0;
+font-family: Georgia, serif;
+background: linear-gradient(180deg, #cfe8d6 0%, #e8f3ec 100%);
+color: #1f3d2b;
+text-align: center;
 }
 
 .container {
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 2rem 1.25rem 3rem;
+max-width: 420px;
+margin: 0 auto;
+padding: 2rem 1.25rem 3rem;
 }
 
 /* --- Images --- */
 .museum-logo,
 .listen-image {
-  display: block;
-  max-width: 140px;
-  width: 100%;
-  height: auto;
-  margin: 1.1rem auto 1.2rem;
-  opacity: 0.9;
+display: block;
+max-width: 140px;
+width: 100%;
+height: auto;
+margin: 1.1rem auto 1.2rem;
+opacity: 0.9;
 }
 
 /* --- Typography --- */
 h1 {
-  font-size: 1.8rem;
-  margin: 0.4rem 0;
-  color: #1f3d2b;
+font-size: 1.8rem;
+margin: 0.4rem 0;
+color: #1f3d2b;
 }
 
 .tm {
-  font-size: 0.45em;     /* much smaller than text */  TRADEMARK
-  vertical-align: 0.6em; /* lifts it nicely above */
-  margin-left: 2px;      /* tiny spacing from R */
+font-size: 0.45em;
+vertical-align: 0.6em;
+margin-left: 2px;
 }
 
 h1, h3 {
-  font-family: Georgia, serif;
-}
-
-.qr-label,
-.qr-place,
-.ticket-intro {
-  font-size: 0.9rem;
-}
-
-.brand sup {
-  font-size: 0.55em;
-  vertical-align: super;
-  margin-left: 2px;
-  opacity: 0.7;
+font-family: Georgia, serif;
 }
 
 .subheading {
-  font-style: italic;
-  font-size: 1rem;
-  opacity: 0.85;
-  margin-bottom: 1.5rem;
+font-style: italic;
+font-size: 1rem;
+opacity: 0.85;
+margin-bottom: 1.5rem;
 }
 
 .ticket-intro {
-  margin: 0.5rem 0 0.6rem;
-  font-size: 0.95rem;
-  opacity: 0.8;
-}
-
-/* --- Ticket Button --- */
-.ticket-button {
-  display: inline-block;
-  margin: 0.5rem auto 1.5rem;
-  padding: 0.85rem 1.4rem;
-  background: #2e5a3f;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 20px;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-.ticket-button:hover {
-  background: #244a34;
+margin: 0.5rem 0 0.6rem;
+font-size: 0.95rem;
+opacity: 0.8;
 }
 
 /* --- Divider --- */
 .divider {
-  width: 70%;
-  height: 1px;
-  background: #b8b1a6;
-  margin: 1.2rem auto 1.8rem;
+width: 70%;
+height: 1px;
+background: #b8b1a6;
+margin: 1.2rem auto 1.8rem;
 }
 
-/* --- QR Sections --- */
+/* --- Sections --- */
 .qr-section {
-  margin-bottom: 2rem;
-  text-align: center;
+margin-bottom: 2rem;
+text-align: center;
 }
 
 .qr-title {
-  font-size: 1.15rem;
-  margin-bottom: 0.4rem;
+font-size: 1.15rem;
+margin-bottom: 0.4rem;
 }
 
 .qr-desc {
-  font-size: 0.95rem;
-  margin-bottom: 0.75rem;
-  opacity: 0.85;
+font-size: 0.95rem;
+margin-bottom: 0.75rem;
+opacity: 0.85;
 }
 
 .qr-place {
-  font-size: 0.85rem;
-  opacity: 0.75;
-  margin-bottom: 0.6rem;
-}
-
-/* --- QR Interaction --- */
-.qr-link {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.qr-code {
-  display: block;
-  width: 95%;
-  max-width: 340px;
-  min-width: 230px;
-  margin: 0.6rem auto 0.3rem;
-  padding: 0 !important;
-  background: transparent !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-
-.qr-label {
-  font-style: italic;
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin-bottom: 1.2rem;
+font-size: 0.85rem;
+opacity: 0.75;
+margin-bottom: 0.6rem;
 }
 
 /* --- Links --- */
+.qr-link {
+display: inline-block;
+text-decoration: none;
+color: inherit;
+}
+
+/* --- Ticket Image (Entry) --- */
+.ticket-image {
+display: block;
+max-width: 180px;
+width: 100%;
+height: auto;
+margin: 0.8rem auto 0.4rem;
+}
+
+/* --- QR Images (Discover / Listen) --- */
+.qr-code {
+display: block;
+width: 95%;
+max-width: 340px;
+min-width: 230px;
+margin: 0.6rem auto 0.3rem;
+}
+
+/* --- Labels --- */
+.qr-label {
+font-style: italic;
+font-size: 0.9rem;
+opacity: 0.8;
+margin-bottom: 1.2rem;
+}
+
 .qr-link:hover .qr-label {
-  opacity: 1;
+opacity: 1;
 }
