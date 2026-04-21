@@ -39,7 +39,7 @@ color: #1f3d2b;
   text-align: center;
   margin-top: 0;
   transform: translateY(-2px); /* a touch less lift */
-  margin-bottom: 16px;         /* tighter, more connected */
+  margin-bottom: 18px;         /* tighter, more connected */
   letter-spacing: 0.04em;     /* slightly more refined */
 }
 
