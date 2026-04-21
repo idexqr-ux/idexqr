@@ -32,6 +32,12 @@ h1 {
   color: #1f3d2b;
 }
 
+.tm {
+  font-size: 0.45em;     /* much smaller than text */  TRADEMARK
+  vertical-align: 0.6em; /* lifts it nicely above */
+  margin-left: 2px;      /* tiny spacing from R */
+}
+
 h1, h3 {
   font-family: Georgia, serif;
 }
