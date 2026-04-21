@@ -32,11 +32,20 @@ margin: 0.4rem 0;
 color: #1f3d2b;
 }
 
+.brand {
+  font-size: 1.1rem;
+  font-weight: normal;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+}
+
 .tm {
-  font-size: 0.5em;     /* was 0.45 */
-  vertical-align: 0.35em;/* was 0.6 */
+  font-size: 0.5em;
+  vertical-align: 0.35em;
   margin-left: 1px;
-  opacity: 0.15;          /* softens it */
+  opacity: 0.5;
 }
 
 h1, h3 {
