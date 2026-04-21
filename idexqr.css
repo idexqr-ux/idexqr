@@ -33,13 +33,14 @@ color: #1f3d2b;
 }
 
 .brand {
-  font-size: 1.5rem;
+  font-size: 1.45rem;          /* slightly softer */
   font-weight: normal;
-  opacity: 0.8;
+  opacity: 0.75;               /* blends more calmly */
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px; /* 👈 key spacing */
-  letter-spacing: 0.03em;
+  margin-top: 0;
+  transform: translateY(-2px); /* a touch less lift */
+  margin-bottom: 16px;         /* tighter, more connected */
+  letter-spacing: 0.035em;     /* slightly more refined */
 }
 
 .tm {
