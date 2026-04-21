@@ -33,7 +33,7 @@ color: #1f3d2b;
 }
 
 .brand {
-  font-size: 1.45rem;          /* slightly softer */
+  font-size: 1.5rem;          /* slightly softer */
   font-weight: normal;
   opacity: 0.75;               /* blends more calmly */
   text-align: center;
@@ -44,7 +44,7 @@ color: #1f3d2b;
 }
 
 .tm {
-  font-size: 0.4em;
+  font-size: 0.3em;
   vertical-align: 0.35em;
   margin-left: 1px;
   opacity: 0.5;
