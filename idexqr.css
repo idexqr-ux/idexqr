@@ -1,46 +1,46 @@
 /* --- Base Layout --- */
 body {
-margin: 0;
-padding: 0;
-font-family: Georgia, serif;
-background: linear-gradient(180deg, #cfe8d6 0%, #e8f3ec 100%);
-color: #1f3d2b;
-text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(180deg, #cfe8d6 0%, #e8f3ec 100%);
+  color: #1f3d2b;
+  text-align: center;
 }
 
 .container {
-max-width: 420px;
-margin: 0 auto;
-padding: 2rem 1.25rem 3rem;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
 }
 
 /* --- Images --- */
 .museum-logo,
 .listen-image {
-display: block;
-max-width: 140px;
-width: 100%;
-height: auto;
-margin: 1.1rem auto 1.2rem;
-opacity: 0.9;
+  display: block;
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  margin: 1.1rem auto 1.2rem;
+  opacity: 0.9;
 }
 
 /* --- Typography --- */
 h1 {
-font-size: 2.05rem;
-margin: 0.4rem 0;
-color: #1f3d2b;
+  font-size: 2.05rem;
+  margin: 0.4rem 0;
+  color: #1f3d2b;
 }
 
 .brand {
-  font-size: 1.5rem;          /* slightly softer */
+  font-size: 1.5rem;
   font-weight: normal;
-  opacity: 0.75;               /* blends more calmly */
+  opacity: 0.75;
   text-align: center;
   margin-top: 0;
-  transform: translateY(-2px); /* a touch less lift */
-  margin-bottom: 18px;         /* tighter, more connected */
-  letter-spacing: 0.02em;     /* slightly more refined */
+  transform: translateY(-2px);
+  margin-bottom: 18px;
+  letter-spacing: 0.02em;
 }
 
 .tm {
@@ -51,82 +51,71 @@ color: #1f3d2b;
 }
 
 h1, h3 {
-font-family: Georgia, serif;
+  font-family: Georgia, serif;
 }
 
 .subheading {
-font-style: italic;
-font-size: 1rem;
-opacity: 0.85;
-margin-bottom: 1.5rem;
-}
-
-.ticket-intro {
-margin: 0.5rem 0 0.6rem;
-font-size: 0.95rem;
-opacity: 0.8;
+  font-style: italic;
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
 }
 
 /* --- Divider --- */
 .divider {
-width: 70%;
-height: 1px;
-background: #b8b1a6;
-margin: 1.2rem auto 1.8rem;
+  width: 70%;
+  height: 1px;
+  background: #b8b1a6;
+  margin: 1.2rem auto 1.8rem;
 }
 
 /* --- Sections --- */
 .qr-section {
-margin-bottom: 2rem;
-text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .qr-title {
-font-size: 1.15rem;
-margin-bottom: 0.4rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
 }
 
 .qr-desc {
-font-size: 0.95rem;
-margin-bottom: 0.75rem;
-opacity: 0.85;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
 }
 
 .qr-place {
-font-size: 0.85rem;
-opacity: 0.75;
-margin-bottom: 0.6rem;
-}
-
-.ticket-qr {
-  border-radius: 8px;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 0.6rem;
 }
 
 /* --- Links --- */
 .qr-link {
-display: inline-block;
-text-decoration: none;
-color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* --- Ticket Image (Entry) --- */
 .ticket-image {
-display: block;
-max-width: 180px;
-width: 100%;
-height: auto;
-margin: 0.8rem auto 0.4rem;
+  display: block;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  margin: 0.8rem auto 0.4rem;
 }
 
 /* --- QR Images (Discover / Listen) --- */
 .qr-code {
-display: block;
-width: 95%;
-max-width: 340px;
-min-width: 230px;
-margin: 0.6rem auto 0.3rem;
+  display: block;
+  width: 95%;
+  max-width: 340px;
+  min-width: 230px;
+  margin: 0.6rem auto 0.3rem;
 }
-
 /* --- Labels --- */
 .qr-label {
 font-style: italic;
