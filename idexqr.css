@@ -106,7 +106,6 @@ h1, h3 {
   width: 100%;
   height: auto;
   margin: 0.8rem auto 0.4rem;
-
   filter: drop-shadow(0 2px 5px rgba(0,0,0,0.06));
 }
 
@@ -117,13 +116,10 @@ h1, h3 {
   max-width: 340px;
   min-width: 230px;
   margin: 0.6rem auto 0.3rem;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.02);
-
   border-radius: 10px;
-  background: #f3f5f4;   /* 👈 very soft grey */
+  background: #f3f5f4;
   padding: 2px;
-
-  overflow: hidden; /* 👈 ensures edges clip cleanly */
+  overflow: hidden;
 }
 /* --- Labels --- */
 .qr-label {
