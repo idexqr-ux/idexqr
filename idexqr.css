@@ -98,6 +98,10 @@ opacity: 0.75;
 margin-bottom: 0.6rem;
 }
 
+.ticket-qr {
+  border-radius: 8px;
+}
+
 /* --- Links --- */
 .qr-link {
 display: inline-block;
