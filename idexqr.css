@@ -115,17 +115,18 @@ h1, h3 {
   max-width: 340px;
   min-width: 230px;
   margin: 0.6rem auto 0.3rem;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.02);
 
   border-radius: 10px;
-  background: #ffffff;
-  padding: 6px;
+  background: #f3f5f4;   /* 👈 very soft grey */
+  padding: 2px;
 
   overflow: hidden; /* 👈 ensures edges clip cleanly */
 }
 /* --- Labels --- */
 .qr-label {
 font-style: italic;
-font-size: 0.9rem;
+font-size: 0.10rem;
 opacity: 0.8;
 margin-bottom: 1.2rem;
 }
