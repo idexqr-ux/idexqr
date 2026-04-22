@@ -102,8 +102,8 @@ h1, h3 {
 /* --- Ticket Image (Entry) --- */
 .ticket-image {
   display: block;
-  max-width: 260px;
-  width: 100%;
+  max-width: 280px;
+  width: 75%;
   height: auto;
   margin: 0.1rem auto 0.6rem;
   filter: drop-shadow(0 2px 5px rgba(0,0,0,0.06));
