@@ -129,10 +129,9 @@ h1, h3 {
 }
 /* --- Labels --- */
 .qr-label {
-font-style: italic;
-font-size: 0.10rem;
-opacity: 0.8;
-margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  color: #6f7c78;
+  margin-top: 6px;
 }
 
 .qr-link:hover .qr-label {
