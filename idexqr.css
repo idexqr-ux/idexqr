@@ -286,6 +286,12 @@ opacity: 1;
   color: var(--muted);
 }
 
+.closing-band p {
+  color: var(--muted);
+  opacity: 0.85;
+  line-height: 1.85;
+}
+
 .footer {
   margin-top: 64px;
   text-align: center;
