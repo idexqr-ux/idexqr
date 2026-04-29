@@ -137,3 +137,99 @@ h1, h3 {
 .qr-link:hover .qr-label {
 opacity: 1;
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.solution-card {
+  padding: 28px;
+  border: 1px solid #d9ded9;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 16px 38px rgba(40, 50, 45, 0.08);
+  text-align: center;
+}
+
+.solution-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.45rem;
+  font-weight: normal;
+}
+
+.solution-card p {
+  margin: 0 0 18px;
+  color: #66716d;
+  line-height: 1.55;
+}
+
+.qr-preview-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 20px;
+  color: #66716d;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.card-qr {
+  width: 118px;
+  max-width: 100%;
+  border-radius: 18px;
+  border: 1px solid #d9ded9;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.card-ticket {
+  width: 150px;
+  max-width: 100%;
+  border-radius: 18px;
+  border: 1px solid #d9ded9;
+  background: #ffffff;
+}
+
+.quiet-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #c9d5d0;
+  background: #e6eeea;
+  color: #1f2d2a;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.featured-card {
+  max-width: 760px;
+  margin: 28px auto 0;
+}
+
+.coming-soon {
+  display: inline-flex;
+  margin-bottom: 14px !important;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #e6eeea;
+  border: 1px solid #c9d5d0;
+  font-size: 0.82rem;
+  color: #66716d;
+}
+
+.supporting {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
