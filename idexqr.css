@@ -296,25 +296,30 @@ opacity: 1;
   line-height: 1.85;
 }
 
-.footer {
-  margin-top: 64px;
+footer {
+  margin-top: 34px;
   text-align: center;
   color: #8a9692;
-}
-
-.footer p {
-  font-size: 0.55rem;
+  font-size: 0.68rem;
   font-weight: 400;
-  color: inherit;
   opacity: 0.78;
   letter-spacing: 0.04em;
-  margin: 0;
 }
 
-.footer sup {
+footer p {
+  margin: 6px 0;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+footer sup {
   font-size: 0.45em;
-  vertical-align: super;
-  margin-left: 1px;
+  position: relative;
+  top: -0.4em;
 }
 
 .brand sup {
