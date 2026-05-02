@@ -169,6 +169,11 @@ opacity: 1;
   margin: 0 0 18px;
   color: #66716d;
   line-height: 1.55;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .qr-preview-link {
