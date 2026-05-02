@@ -308,6 +308,12 @@ opacity: 1;
   letter-spacing: 0.04em;
 }
 
+.footer sup {
+  font-size: 0.45em;
+  vertical-align: super;
+  margin-left: 1px;
+}
+
 .brand sup {
   font-size: 0.32em;
   vertical-align: super;
