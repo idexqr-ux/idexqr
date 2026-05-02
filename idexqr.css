@@ -25,6 +25,10 @@ body {
   opacity: 0.9;
 }
 
+.entryhub-icon {
+  max-width: 85%;
+}
+
 /* --- Typography --- */
 h1 {
   font-size: 2.05rem;
