@@ -299,13 +299,15 @@ opacity: 1;
 .footer {
   margin-top: 64px;
   text-align: center;
+  color: #8a9692;
 }
 
 .footer p {
   font-size: 0.82rem;
-  color: #8a9692;
+  color: inherit;
   opacity: 0.78;
   letter-spacing: 0.04em;
+  margin: 0;
 }
 
 .footer sup {
