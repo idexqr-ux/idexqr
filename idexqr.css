@@ -1,4 +1,32 @@
 /* --- Base Layout --- */
+.contact-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 28px;
+}
+
+.contact-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.contact-section p {
+  max-width: 680px;
+  margin: 0.5rem auto;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #545454;
+  background: #d8e4df;
+  border: 1px solid rgba(84, 84, 84, 0.18);
+}
+
 .brand-r-wrap {
   position: relative;
   display: inline-block;
