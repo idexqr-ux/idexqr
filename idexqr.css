@@ -34,9 +34,9 @@
 
 .brand-reg {
   position: absolute;
-  top: 0.08em;
-  right: -0.72em;
-  font-size: 0.28em;
+  bottom: 0.02em;
+  right: -0.65em;
+  font-size: 0.26em;
   line-height: 1;
   font-weight: normal;
   opacity: 0.75;
