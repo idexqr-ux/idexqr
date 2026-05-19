@@ -7,6 +7,14 @@
   border-radius: 28px;
 }
 
+.footer-sub {
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+  color: rgba(70, 84, 78, 0.72);
+  text-align: center;
+  line-height: 1.5;
+}
+
 .contact-section h2 {
   margin-bottom: 0.75rem;
 }
