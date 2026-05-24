@@ -22,6 +22,8 @@
 .contact-section p {
   max-width: 680px;
   margin: 0.5rem auto;
+  letter-spacing: 0.02em;
+  line-height: 1.9;
 }
 
 .contact-button {
