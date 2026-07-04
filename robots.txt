@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://idexqr.com/sitemap.xml
