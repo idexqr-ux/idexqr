@@ -394,3 +394,82 @@ footer sup {
   position: relative;
   top: -0.4em;
 }
+
+/* --- IdexQR portfolio homepage --- */
+
+.portfolio-home .container {
+  max-width: 1120px;
+}
+
+.portfolio-home .hero {
+  margin-bottom: 30px;
+}
+
+.portfolio-home .platform-note {
+  margin-bottom: 34px;
+}
+
+.portfolio-home .solutions-section {
+  margin-top: 34px;
+}
+
+.portfolio-home .card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.portfolio-home .solution-card {
+  padding: 22px 18px;
+}
+
+.portfolio-home .solutions-section.workplace {
+  margin-top: 34px;
+}
+
+.portfolio-home .featured-card {
+  max-width: none;
+  margin-top: 22px;
+}
+
+@media (max-width: 820px) {
+  .portfolio-home .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolio-home .container {
+    padding: 1.5rem 0.75rem 2.5rem;
+  }
+
+  .portfolio-home .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .portfolio-home .solution-card {
+    padding: 16px 10px;
+    border-radius: 20px;
+  }
+
+  .portfolio-home .solution-card h3 {
+    font-size: 1.12rem;
+  }
+
+  .portfolio-home .solution-card p {
+    min-height: 64px;
+    margin-bottom: 10px;
+    font-size: 0.86rem;
+  }
+
+  .portfolio-home .card-qr {
+    width: 92px;
+    padding: 7px;
+    border-radius: 14px;
+  }
+
+  .portfolio-home .qr-preview-link {
+    margin-bottom: 10px;
+  }
+}
