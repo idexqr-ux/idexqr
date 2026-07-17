@@ -534,3 +534,40 @@ footer sup {
 .portfolio-home .hold-card-brand__by {
   color: #4f675d;
 }
+
+.portfolio-home .contact-section {
+  margin-top: 36px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  text-align: left;
+  background: rgba(247, 244, 237, 0.82);
+  border: 1px solid rgba(120, 130, 123, 0.16);
+  border-radius: 22px;
+}
+
+.portfolio-home .contact-copy h2 {
+  margin: 0 0 8px;
+  font-size: 1.55rem;
+}
+
+.portfolio-home .contact-copy p {
+  max-width: 620px;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.portfolio-home .contact-button {
+  flex: 0 0 auto;
+  margin-top: 0;
+}
+
+@media (max-width: 620px) {
+  .portfolio-home .contact-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+  }
+}
