@@ -475,12 +475,12 @@ footer sup {
 }
 
 .portfolio-home .featured-card {
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.92),
-      rgba(224, 239, 231, 0.9)
-    );
+  background: linear-gradient(
+    135deg,
+    #e4eee8 0%,
+    #d4e4da 100%
+  );
+  border-color: #b8cec0;
 }
 
 .hold-card-brand {
@@ -488,14 +488,14 @@ footer sup {
   min-height: 118px;
   margin: 0 auto 20px;
   padding: 16px;
-  border: 1px solid #c9d5d0;
+  border: 1px solid #a9c3b3;
   border-radius: 22px;
-  background: #f7faf8;
+  background: #c8ddd0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 24px rgba(40, 50, 45, 0.08);
+  box-shadow: 0 10px 24px rgba(40, 65, 52, 0.1);
 }
 
 .hold-card-brand__name {
