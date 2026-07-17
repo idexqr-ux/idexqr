@@ -516,3 +516,21 @@ footer sup {
   position: relative;
   top: -0.4em;
 }
+
+.portfolio-home .hold-card-brand {
+  background: linear-gradient(
+    145deg,
+    #b8d0c1 0%,
+    #ccded3 100%
+  );
+  border-color: #9ebaaa;
+  box-shadow: 0 10px 24px rgba(40, 65, 52, 0.14);
+}
+
+.portfolio-home .hold-card-brand__name {
+  color: #234236;
+}
+
+.portfolio-home .hold-card-brand__by {
+  color: #4f675d;
+}
